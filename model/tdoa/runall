@@ -1,0 +1,46 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use Getopt::Long;
+
+sub print_help
+{
+	print "Usage: $0 --path_data=<path_to_data_dir> --path_model=<path_to_model> \n";
+	exit 1;
+}
+
+sub main
+{
+	my $path_data= undef;
+	my $path_model = undef;
+
+	GetOptions (
+		"path_data=s" => \$path_data,
+		"path_model=s"   => \$path_model) or die &print_help();
+
+
+	defined($path_data) && defined($path_model) || &print_help();
+
+	print "INFO: $path_data,$path_model\n";
+	opendir(my $dh_data, $path_data) || die "Error: can not opendif $path_data\n";
+	
+	my @files=readdir $dh_data;
+	foreach (@files) 
+	{
+		if (/AUDIO\.txt$/)
+		{
+			my $name_mic = $_;
+			my $name_base=$name_mic;
+			$name_base=~ s/_AUDIO\.txt//;
+			my $file_base = "$path_data/$name_base";
+			print "|$file_base|\n";
+			#system("octave -nodesktop -r \"tdoa_wrapper('$file_base');exit\"");
+			system("octave --eval \"tdoa_wrapper('$file_base');exit\"");
+		}
+    	}
+   	closedir $dh_data;
+}
+
+&main();

@@ -1,0 +1,97 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use Getopt::Long;
+
+sub print_help
+{
+	print "Usage: $0 --path_data=<path_to_data_dir> \n";
+	exit 1;
+}
+
+sub main
+{
+	my $path_data= undef;
+	my $output_file= "output.html";
+
+	GetOptions (
+		"path_data=s" => \$path_data) or die &print_help();
+
+	defined($path_data) || &print_help();
+	print "INFO: $path_data\n";
+
+	open OUT, ">", $output_file or die "Error can not open $output_file\n";
+	print OUT <<EOF;
+<html>
+	<body>
+		<table border="1">
+			<tr>
+				<td>name</td>
+				<td>accelerometer x</td>
+				<td>accelerometer y</td>
+				<td>accelerometer z</td>
+				<td>gyro x</td>
+				<td>gyro y</td>
+				<td>gyro z</td>
+				<td>mic</td>
+			</tr>
+EOF
+
+	opendir(my $dh_data, $path_data) || die "Error: can not opendif $path_data\n";
+	my @files=readdir $dh_data;
+	
+	
+	foreach (@files) 
+	{
+		if (/result\.mic\.png$/)
+		{
+			my $name_mic=$_;
+			my $name_ax=$name_mic;
+			my $name_ay=$name_mic;
+			my $name_az=$name_mic;
+			my $name_gx=$name_mic;
+			my $name_gy=$name_mic;
+			my $name_gz=$name_mic;
+			my $name=$name_mic;
+			$name=~s/(^.*?_.*?_.*?_.*?_).*$/$1/;
+			$name_ax=~s/mic\.png/ax.png/;
+			$name_ay=~s/mic\.png/ay.png/;
+			$name_az=~s/mic\.png/az.png/;
+			$name_gx=~s/mic\.png/gx.png/;
+			$name_gy=~s/mic\.png/gy.png/;
+			$name_gz=~s/mic\.png/gz.png/;
+			print "|$name_ax|$name_ay|$name_az|$name_gx|$name_gy|$name_gz|$name_mic|\n";
+			print OUT<<EOF;
+			<tr>
+				<td>$name</td>
+				<td><a href="pics/$name_ax"><img src="pics/$name_ax" width='150' height='150'></a></td>
+				<td><a href="pics/$name_ay"><img src="pics/$name_ay" width='150' height='150'></a></td>
+				<td><a href="pics/$name_az"><img src="pics/$name_az" width='150' height='150'></a></td>
+				<td><a href="pics/$name_gx"><img src="pics/$name_gx" width='150' height='150'></a></td>
+				<td><a href="pics/$name_gy"><img src="pics/$name_gy" width='150' height='150'></a></td>
+				<td><a href="pics/$name_gz"><img src="pics/$name_gz" width='150' height='150'></a></td>
+				<td><a href="pics/$name_mic"><img src="pics/$name_mic" width='150' height='150'></a></td>
+			</tr>
+EOF
+			system("cp $path_data/$name_ax pics/");
+			system("cp $path_data/$name_ay pics/");
+			system("cp $path_data/$name_az pics/");
+			system("cp $path_data/$name_gx pics/");
+			system("cp $path_data/$name_gy pics/");
+			system("cp $path_data/$name_gz pics/");
+			system("cp $path_data/$name_mic pics/");
+		}
+    	}
+   	closedir $dh_data;
+
+	print OUT <<EOF;
+		</table>
+	</body>
+</html>
+EOF
+	close OUT;
+}
+
+&main();
