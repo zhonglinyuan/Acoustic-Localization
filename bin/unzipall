@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+my @todo = `ls *.zip`;
+foreach my $i (@todo) {
+    chomp $i;
+    system("unzip $i");
+}

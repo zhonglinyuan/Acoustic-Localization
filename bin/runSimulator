@@ -1,0 +1,58 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+my $path = $ENV{"HOME"};
+my $flag_updated = 0;
+my @changed = ();
+
+my $startdate = `date`;
+
+chdir("$path/Projects/capstone/data");
+my $update_out = `svn update`;
+if ($update_out =~ /Updated to revision/)
+{
+	$flag_updated = 1;
+	push @changed,$update_out;
+}
+
+chdir("$path/Projects/capstone/model");
+$update_out = `svn update`;
+if ($update_out =~ /Updated to revision/)
+{
+	$flag_updated = 1;
+	push @changed,$update_out;
+}
+
+chdir("$path/Projects/capstone/bin");
+$update_out = `svn update`;
+if ($update_out =~ /Updated to revision/)
+{
+	$flag_updated = 1;
+	push @changed,$update_out;
+}
+
+if ($flag_updated == 0) {
+	exit 0;
+}
+
+my $output = `matlab -nosplash -nodesktop -r 'cd ../model/simulator_mloc;simulator_mloc;quit'`;
+
+my $date = `date`;
+
+my $output_file = "$path/public_html/ece496/simulator.txt";
+open HTML,">",$output_file;
+
+print HTML "------------\n";
+print HTML "START:$startdate\nEND:$date\n";
+print HTML "------------\n";
+print HTML join("\n",@changed);
+print HTML "------------\n";
+print HTML "http://www.ecf.utoronto.ca/~zhouweij/ece496/simulator.txt\n";
+print HTML "------------\n";
+print HTML $output;
+
+close HTML;
+
+system ("mutt -s 'ECE496 simulation result' keiby.zhou\@gmail.com  -c kaizou898\@gmail.com -c maxzly\@gmail.com < $output_file");
