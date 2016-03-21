@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E2ECBA116851187006BB64B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2ECBA016851187006BB64B /* UIKit.framework */; };
+		6E2ECBA316851187006BB64B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2ECBA216851187006BB64B /* Foundation.framework */; };
+		6E2ECBA516851187006BB64B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2ECBA416851187006BB64B /* CoreGraphics.framework */; };
+		6E2ECBAB16851187006BB64B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E2ECBA916851187006BB64B /* InfoPlist.strings */; };
+		6E2ECBAD16851187006BB64B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2ECBAC16851187006BB64B /* main.m */; };
+		6E2ECBB116851187006BB64B /* YZZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2ECBB016851187006BB64B /* YZZAppDelegate.m */; };
+		6E2ECBB316851187006BB64B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E2ECBB216851187006BB64B /* Default.png */; };
+		6E2ECBB516851187006BB64B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E2ECBB416851187006BB64B /* Default@2x.png */; };
+		6E2ECBB716851187006BB64B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E2ECBB616851187006BB64B /* Default-568h@2x.png */; };
+		6E2ECBBA16851187006BB64B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2ECBB816851187006BB64B /* MainStoryboard.storyboard */; };
+		6E2ECBBD16851187006BB64B /* YZZViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E2ECBBC16851187006BB64B /* YZZViewController.mm */; };
+		6E2ECBD7168514CC006BB64B /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2ECBC4168514CC006BB64B /* CADebugMacros.cpp */; };
+		6E2ECBD8168514CC006BB64B /* CADebugPrintf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2ECBC6168514CC006BB64B /* CADebugPrintf.cpp */; };
+		6E2ECBD9168514CC006BB64B /* CAHostTimeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2ECBC8168514CC006BB64B /* CAHostTimeBase.cpp */; };
+		6E2ECBDA168514CC006BB64B /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2ECBCB168514CC006BB64B /* CAStreamBasicDescription.cpp */; };
+		6E2ECBDB168514CC006BB64B /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2ECBCD168514CC006BB64B /* CAXException.cpp */; };
+		6E2ECBDC168514CC006BB64B /* YZZSignalProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E2ECBD1168514CC006BB64B /* YZZSignalProcessor.mm */; };
+		6E2ECBDD168514CC006BB64B /* YZZLocationManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E2ECBD2168514CC006BB64B /* YZZLocationManager.mm */; };
+		6E2ECBDE168514CC006BB64B /* YZZSensorManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E2ECBD4168514CC006BB64B /* YZZSensorManager.mm */; };
+		6E2ECBDF168514CC006BB64B /* my_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2ECBD6168514CC006BB64B /* my_helper.cpp */; };
+		6E2ECBE21685151F006BB64B /* FixedFifo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2ECBE01685151F006BB64B /* FixedFifo.cpp */; };
+		6E2ECBE51685159A006BB64B /* YZZLocation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E2ECBE41685159A006BB64B /* YZZLocation.mm */; };
+		6E2ECBE91685169C006BB64B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2ECBE61685169C006BB64B /* AudioToolbox.framework */; };
+		6E2ECBEA1685169C006BB64B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2ECBE71685169C006BB64B /* CoreMotion.framework */; };
+		6E2ECBEB1685169C006BB64B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2ECBE81685169C006BB64B /* MessageUI.framework */; };
+		6E2ECBED168516BD006BB64B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2ECBEC168516BD006BB64B /* Accelerate.framework */; };
+		6E2ECBEF168516D1006BB64B /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2ECBEE168516D1006BB64B /* CoreAudio.framework */; };
+		6E2ECBF1168516E8006BB64B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2ECBF0168516E8006BB64B /* QuartzCore.framework */; };
+		6E2ECBF716851AD4006BB64B /* ExtendedTouchLogo114.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E2ECBF616851AD4006BB64B /* ExtendedTouchLogo114.png */; };
+		6E2ECBFA16851AD6006BB64B /* ExtendedTouchLogo57.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E2ECBF916851AD6006BB64B /* ExtendedTouchLogo57.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E2ECB9C16851187006BB64B /* SimpleTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E2ECBA016851187006BB64B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6E2ECBA216851187006BB64B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6E2ECBA416851187006BB64B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6E2ECBA816851187006BB64B /* SimpleTap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTap-Info.plist"; sourceTree = "<group>"; };
+		6E2ECBAA16851187006BB64B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E2ECBAC16851187006BB64B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E2ECBAE16851187006BB64B /* SimpleTap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleTap-Prefix.pch"; sourceTree = "<group>"; };
+		6E2ECBAF16851187006BB64B /* YZZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZZAppDelegate.h; sourceTree = "<group>"; };
+		6E2ECBB016851187006BB64B /* YZZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZZAppDelegate.m; sourceTree = "<group>"; };
+		6E2ECBB216851187006BB64B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6E2ECBB416851187006BB64B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6E2ECBB616851187006BB64B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6E2ECBB916851187006BB64B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6E2ECBBB16851187006BB64B /* YZZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZZViewController.h; sourceTree = "<group>"; };
+		6E2ECBBC16851187006BB64B /* YZZViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = YZZViewController.mm; sourceTree = "<group>"; };
+		6E2ECBC3168514CC006BB64B /* CABitOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABitOperations.h; sourceTree = "<group>"; };
+		6E2ECBC4168514CC006BB64B /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		6E2ECBC5168514CC006BB64B /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		6E2ECBC6168514CC006BB64B /* CADebugPrintf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugPrintf.cpp; sourceTree = "<group>"; };
+		6E2ECBC7168514CC006BB64B /* CADebugPrintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugPrintf.h; sourceTree = "<group>"; };
+		6E2ECBC8168514CC006BB64B /* CAHostTimeBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAHostTimeBase.cpp; sourceTree = "<group>"; };
+		6E2ECBC9168514CC006BB64B /* CAHostTimeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAHostTimeBase.h; sourceTree = "<group>"; };
+		6E2ECBCA168514CC006BB64B /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		6E2ECBCB168514CC006BB64B /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		6E2ECBCC168514CC006BB64B /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		6E2ECBCD168514CC006BB64B /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		6E2ECBCE168514CC006BB64B /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		6E2ECBCF168514CC006BB64B /* YZZSignalProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZSignalProcessor.h; sourceTree = "<group>"; };
+		6E2ECBD0168514CC006BB64B /* YZZLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZLocationManager.h; sourceTree = "<group>"; };
+		6E2ECBD1168514CC006BB64B /* YZZSignalProcessor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YZZSignalProcessor.mm; sourceTree = "<group>"; };
+		6E2ECBD2168514CC006BB64B /* YZZLocationManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YZZLocationManager.mm; sourceTree = "<group>"; };
+		6E2ECBD3168514CC006BB64B /* YZZSensorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZSensorManager.h; sourceTree = "<group>"; };
+		6E2ECBD4168514CC006BB64B /* YZZSensorManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YZZSensorManager.mm; sourceTree = "<group>"; };
+		6E2ECBD5168514CC006BB64B /* my_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_helper.h; sourceTree = "<group>"; };
+		6E2ECBD6168514CC006BB64B /* my_helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = my_helper.cpp; sourceTree = "<group>"; };
+		6E2ECBE01685151F006BB64B /* FixedFifo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FixedFifo.cpp; sourceTree = "<group>"; };
+		6E2ECBE11685151F006BB64B /* FixedFifo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedFifo.h; sourceTree = "<group>"; };
+		6E2ECBE31685159A006BB64B /* YZZLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZLocation.h; sourceTree = "<group>"; };
+		6E2ECBE41685159A006BB64B /* YZZLocation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YZZLocation.mm; sourceTree = "<group>"; };
+		6E2ECBE61685169C006BB64B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6E2ECBE71685169C006BB64B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		6E2ECBE81685169C006BB64B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		6E2ECBEC168516BD006BB64B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		6E2ECBEE168516D1006BB64B /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		6E2ECBF0168516E8006BB64B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6E2ECBF616851AD4006BB64B /* ExtendedTouchLogo114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExtendedTouchLogo114.png; sourceTree = "<group>"; };
+		6E2ECBF916851AD6006BB64B /* ExtendedTouchLogo57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExtendedTouchLogo57.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E2ECB9916851187006BB64B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E2ECBF1168516E8006BB64B /* QuartzCore.framework in Frameworks */,
+				6E2ECBEF168516D1006BB64B /* CoreAudio.framework in Frameworks */,
+				6E2ECBED168516BD006BB64B /* Accelerate.framework in Frameworks */,
+				6E2ECBE91685169C006BB64B /* AudioToolbox.framework in Frameworks */,
+				6E2ECBEA1685169C006BB64B /* CoreMotion.framework in Frameworks */,
+				6E2ECBEB1685169C006BB64B /* MessageUI.framework in Frameworks */,
+				6E2ECBA116851187006BB64B /* UIKit.framework in Frameworks */,
+				6E2ECBA316851187006BB64B /* Foundation.framework in Frameworks */,
+				6E2ECBA516851187006BB64B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E2ECB9116851187006BB64B = {
+			isa = PBXGroup;
+			children = (
+				6E2ECBF916851AD6006BB64B /* ExtendedTouchLogo57.png */,
+				6E2ECBF616851AD4006BB64B /* ExtendedTouchLogo114.png */,
+				6E2ECBA616851187006BB64B /* ExtendedTouch */,
+				6E2ECB9F16851187006BB64B /* Frameworks */,
+				6E2ECB9D16851187006BB64B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E2ECB9D16851187006BB64B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E2ECB9C16851187006BB64B /* SimpleTap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E2ECB9F16851187006BB64B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E2ECBF0168516E8006BB64B /* QuartzCore.framework */,
+				6E2ECBEE168516D1006BB64B /* CoreAudio.framework */,
+				6E2ECBEC168516BD006BB64B /* Accelerate.framework */,
+				6E2ECBE61685169C006BB64B /* AudioToolbox.framework */,
+				6E2ECBE71685169C006BB64B /* CoreMotion.framework */,
+				6E2ECBE81685169C006BB64B /* MessageUI.framework */,
+				6E2ECBA016851187006BB64B /* UIKit.framework */,
+				6E2ECBA216851187006BB64B /* Foundation.framework */,
+				6E2ECBA416851187006BB64B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E2ECBA616851187006BB64B /* ExtendedTouch */ = {
+			isa = PBXGroup;
+			children = (
+				6E2ECBE31685159A006BB64B /* YZZLocation.h */,
+				6E2ECBE41685159A006BB64B /* YZZLocation.mm */,
+				6E2ECBCF168514CC006BB64B /* YZZSignalProcessor.h */,
+				6E2ECBD0168514CC006BB64B /* YZZLocationManager.h */,
+				6E2ECBD1168514CC006BB64B /* YZZSignalProcessor.mm */,
+				6E2ECBD2168514CC006BB64B /* YZZLocationManager.mm */,
+				6E2ECBD3168514CC006BB64B /* YZZSensorManager.h */,
+				6E2ECBD4168514CC006BB64B /* YZZSensorManager.mm */,
+				6E2ECBAF16851187006BB64B /* YZZAppDelegate.h */,
+				6E2ECBB016851187006BB64B /* YZZAppDelegate.m */,
+				6E2ECBB816851187006BB64B /* MainStoryboard.storyboard */,
+				6E2ECBBB16851187006BB64B /* YZZViewController.h */,
+				6E2ECBBC16851187006BB64B /* YZZViewController.mm */,
+				6E2ECBA716851187006BB64B /* Supporting Files */,
+			);
+			path = ExtendedTouch;
+			sourceTree = "<group>";
+		};
+		6E2ECBA716851187006BB64B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E2ECBE01685151F006BB64B /* FixedFifo.cpp */,
+				6E2ECBE11685151F006BB64B /* FixedFifo.h */,
+				6E2ECBD5168514CC006BB64B /* my_helper.h */,
+				6E2ECBD6168514CC006BB64B /* my_helper.cpp */,
+				6E2ECBC3168514CC006BB64B /* CABitOperations.h */,
+				6E2ECBC4168514CC006BB64B /* CADebugMacros.cpp */,
+				6E2ECBC5168514CC006BB64B /* CADebugMacros.h */,
+				6E2ECBC6168514CC006BB64B /* CADebugPrintf.cpp */,
+				6E2ECBC7168514CC006BB64B /* CADebugPrintf.h */,
+				6E2ECBC8168514CC006BB64B /* CAHostTimeBase.cpp */,
+				6E2ECBC9168514CC006BB64B /* CAHostTimeBase.h */,
+				6E2ECBCA168514CC006BB64B /* CAMath.h */,
+				6E2ECBCB168514CC006BB64B /* CAStreamBasicDescription.cpp */,
+				6E2ECBCC168514CC006BB64B /* CAStreamBasicDescription.h */,
+				6E2ECBCD168514CC006BB64B /* CAXException.cpp */,
+				6E2ECBCE168514CC006BB64B /* CAXException.h */,
+				6E2ECBA816851187006BB64B /* SimpleTap-Info.plist */,
+				6E2ECBA916851187006BB64B /* InfoPlist.strings */,
+				6E2ECBAC16851187006BB64B /* main.m */,
+				6E2ECBAE16851187006BB64B /* SimpleTap-Prefix.pch */,
+				6E2ECBB216851187006BB64B /* Default.png */,
+				6E2ECBB416851187006BB64B /* Default@2x.png */,
+				6E2ECBB616851187006BB64B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E2ECB9B16851187006BB64B /* SimpleTap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E2ECBC016851187006BB64B /* Build configuration list for PBXNativeTarget "SimpleTap" */;
+			buildPhases = (
+				6E2ECB9816851187006BB64B /* Sources */,
+				6E2ECB9916851187006BB64B /* Frameworks */,
+				6E2ECB9A16851187006BB64B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleTap;
+			productName = ExtendedTouch;
+			productReference = 6E2ECB9C16851187006BB64B /* SimpleTap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E2ECB9316851187006BB64B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YZZ;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = APL;
+			};
+			buildConfigurationList = 6E2ECB9616851187006BB64B /* Build configuration list for PBXProject "SimpleTap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6E2ECB9116851187006BB64B;
+			productRefGroup = 6E2ECB9D16851187006BB64B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E2ECB9B16851187006BB64B /* SimpleTap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E2ECB9A16851187006BB64B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E2ECBAB16851187006BB64B /* InfoPlist.strings in Resources */,
+				6E2ECBB316851187006BB64B /* Default.png in Resources */,
+				6E2ECBB516851187006BB64B /* Default@2x.png in Resources */,
+				6E2ECBB716851187006BB64B /* Default-568h@2x.png in Resources */,
+				6E2ECBBA16851187006BB64B /* MainStoryboard.storyboard in Resources */,
+				6E2ECBF716851AD4006BB64B /* ExtendedTouchLogo114.png in Resources */,
+				6E2ECBFA16851AD6006BB64B /* ExtendedTouchLogo57.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E2ECB9816851187006BB64B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E2ECBAD16851187006BB64B /* main.m in Sources */,
+				6E2ECBB116851187006BB64B /* YZZAppDelegate.m in Sources */,
+				6E2ECBBD16851187006BB64B /* YZZViewController.mm in Sources */,
+				6E2ECBD7168514CC006BB64B /* CADebugMacros.cpp in Sources */,
+				6E2ECBD8168514CC006BB64B /* CADebugPrintf.cpp in Sources */,
+				6E2ECBD9168514CC006BB64B /* CAHostTimeBase.cpp in Sources */,
+				6E2ECBDA168514CC006BB64B /* CAStreamBasicDescription.cpp in Sources */,
+				6E2ECBDB168514CC006BB64B /* CAXException.cpp in Sources */,
+				6E2ECBDC168514CC006BB64B /* YZZSignalProcessor.mm in Sources */,
+				6E2ECBDD168514CC006BB64B /* YZZLocationManager.mm in Sources */,
+				6E2ECBDE168514CC006BB64B /* YZZSensorManager.mm in Sources */,
+				6E2ECBDF168514CC006BB64B /* my_helper.cpp in Sources */,
+				6E2ECBE21685151F006BB64B /* FixedFifo.cpp in Sources */,
+				6E2ECBE51685159A006BB64B /* YZZLocation.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6E2ECBA916851187006BB64B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E2ECBAA16851187006BB64B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6E2ECBB816851187006BB64B /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E2ECBB916851187006BB64B /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E2ECBBE16851187006BB64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6E2ECBBF16851187006BB64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E2ECBC116851187006BB64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExtendedTouch/SimpleTap-Prefix.pch";
+				INFOPLIST_FILE = "ExtendedTouch/SimpleTap-Info.plist";
+				PRODUCT_NAME = SimpleTap;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6E2ECBC216851187006BB64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExtendedTouch/SimpleTap-Prefix.pch";
+				INFOPLIST_FILE = "ExtendedTouch/SimpleTap-Info.plist";
+				PRODUCT_NAME = SimpleTap;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E2ECB9616851187006BB64B /* Build configuration list for PBXProject "SimpleTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E2ECBBE16851187006BB64B /* Debug */,
+				6E2ECBBF16851187006BB64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E2ECBC016851187006BB64B /* Build configuration list for PBXNativeTarget "SimpleTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E2ECBC116851187006BB64B /* Debug */,
+				6E2ECBC216851187006BB64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E2ECB9316851187006BB64B /* Project object */;
+}

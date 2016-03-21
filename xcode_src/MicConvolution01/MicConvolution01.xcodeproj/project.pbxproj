@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E2B6DE016370A0C00E611D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B6DDF16370A0C00E611D1 /* UIKit.framework */; };
+		6E2B6DE216370A0C00E611D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B6DE116370A0C00E611D1 /* Foundation.framework */; };
+		6E2B6DE416370A0C00E611D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B6DE316370A0C00E611D1 /* CoreGraphics.framework */; };
+		6E2B6DEC16370A0C00E611D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2B6DEB16370A0C00E611D1 /* main.m */; };
+		6E2B6DF016370A0C00E611D1 /* YZZAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E2B6DEF16370A0C00E611D1 /* YZZAppDelegate.mm */; };
+		6E2B6DF216370A0C00E611D1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E2B6DF116370A0C00E611D1 /* Default.png */; };
+		6E2B6DF416370A0C00E611D1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E2B6DF316370A0C00E611D1 /* Default@2x.png */; };
+		6E2B6DF616370A0C00E611D1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E2B6DF516370A0C00E611D1 /* Default-568h@2x.png */; };
+		6E2B6DFC16370A0C00E611D1 /* YZZViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E2B6DFB16370A0C00E611D1 /* YZZViewController.mm */; };
+		6E2B6E0716372D1800E611D1 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B6E0616372D1800E611D1 /* CoreAudio.framework */; };
+		6E2B6E0916372D3A00E611D1 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B6E0816372D3A00E611D1 /* CoreMotion.framework */; };
+		6E2B6E0B16372D6900E611D1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B6E0A16372D6900E611D1 /* AudioToolbox.framework */; };
+		6E2B6E1616372E0200E611D1 /* CAHostTimeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2B6E0C16372E0200E611D1 /* CAHostTimeBase.cpp */; };
+		6E2B6E1716372E0200E611D1 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2B6E1116372E0200E611D1 /* CADebugMacros.cpp */; };
+		6E2B6E1816372E0200E611D1 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2B6E1416372E0200E611D1 /* CAStreamBasicDescription.cpp */; };
+		6E2B6E1916372E0200E611D1 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2B6E1516372E0200E611D1 /* CAXException.cpp */; };
+		6E2B6E1B16372E7400E611D1 /* my_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2B6E1A16372E7400E611D1 /* my_helper.cpp */; };
+		6E2B6E251637676800E611D1 /* YZZDataQueuer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2B6E231637676800E611D1 /* YZZDataQueuer.cpp */; };
+		6E2B6E541637948400E611D1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2B6E531637948400E611D1 /* MainStoryboard.storyboard */; };
+		6E2B6E56163794A200E611D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E2B6E55163794A200E611D1 /* InfoPlist.strings */; };
+		6E2B6E5B16379BF600E611D1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B6E5A16379BF600E611D1 /* Accelerate.framework */; };
+		6E2B6E5E16379C4000E611D1 /* Convolution.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E2B6E5C16379C4000E611D1 /* Convolution.mm */; };
+		6E533D021645E89C00B8B038 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E533D011645E89C00B8B038 /* MessageUI.framework */; };
+		A9AD8C711641717900477ADA /* CircularBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9AD8C6F1641717900477ADA /* CircularBuffer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E2B6DDB16370A0C00E611D1 /* MicConvolution01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicConvolution01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E2B6DDF16370A0C00E611D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6E2B6DE116370A0C00E611D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6E2B6DE316370A0C00E611D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6E2B6DE716370A0C00E611D1 /* MicConvolution01-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MicConvolution01-Info.plist"; sourceTree = "<group>"; };
+		6E2B6DEB16370A0C00E611D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E2B6DED16370A0C00E611D1 /* MicConvolution01-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MicConvolution01-Prefix.pch"; sourceTree = "<group>"; };
+		6E2B6DEE16370A0C00E611D1 /* YZZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZZAppDelegate.h; sourceTree = "<group>"; };
+		6E2B6DEF16370A0C00E611D1 /* YZZAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = YZZAppDelegate.mm; sourceTree = "<group>"; };
+		6E2B6DF116370A0C00E611D1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6E2B6DF316370A0C00E611D1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6E2B6DF516370A0C00E611D1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6E2B6DFA16370A0C00E611D1 /* YZZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZZViewController.h; sourceTree = "<group>"; };
+		6E2B6DFB16370A0C00E611D1 /* YZZViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = YZZViewController.mm; sourceTree = "<group>"; };
+		6E2B6E0616372D1800E611D1 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		6E2B6E0816372D3A00E611D1 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		6E2B6E0A16372D6900E611D1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6E2B6E0C16372E0200E611D1 /* CAHostTimeBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAHostTimeBase.cpp; path = ../../CoreAudio/PublicUtility/CAHostTimeBase.cpp; sourceTree = "<group>"; };
+		6E2B6E0D16372E0200E611D1 /* CAHostTimeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAHostTimeBase.h; path = ../../CoreAudio/PublicUtility/CAHostTimeBase.h; sourceTree = "<group>"; };
+		6E2B6E0E16372E0200E611D1 /* CABitOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CABitOperations.h; path = ../../CoreAudio/PublicUtility/CABitOperations.h; sourceTree = "<group>"; };
+		6E2B6E0F16372E0200E611D1 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAMath.h; path = ../../CoreAudio/PublicUtility/CAMath.h; sourceTree = "<group>"; };
+		6E2B6E1016372E0200E611D1 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CADebugMacros.h; path = ../../CoreAudio/PublicUtility/CADebugMacros.h; sourceTree = "<group>"; };
+		6E2B6E1116372E0200E611D1 /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CADebugMacros.cpp; path = ../../CoreAudio/PublicUtility/CADebugMacros.cpp; sourceTree = "<group>"; };
+		6E2B6E1216372E0200E611D1 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAXException.h; path = ../../CoreAudio/PublicUtility/CAXException.h; sourceTree = "<group>"; };
+		6E2B6E1316372E0200E611D1 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAStreamBasicDescription.h; path = ../../CoreAudio/PublicUtility/CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		6E2B6E1416372E0200E611D1 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAStreamBasicDescription.cpp; path = ../../CoreAudio/PublicUtility/CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		6E2B6E1516372E0200E611D1 /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAXException.cpp; path = ../../CoreAudio/PublicUtility/CAXException.cpp; sourceTree = "<group>"; };
+		6E2B6E1A16372E7400E611D1 /* my_helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = my_helper.cpp; sourceTree = "<group>"; };
+		6E2B6E1C16372E8300E611D1 /* my_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_helper.h; sourceTree = "<group>"; };
+		6E2B6E231637676800E611D1 /* YZZDataQueuer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YZZDataQueuer.cpp; sourceTree = "<group>"; };
+		6E2B6E241637676800E611D1 /* YZZDataQueuer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZDataQueuer.h; sourceTree = "<group>"; };
+		6E2B6E531637948400E611D1 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6E2B6E55163794A200E611D1 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		6E2B6E5A16379BF600E611D1 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		6E2B6E5C16379C4000E611D1 /* Convolution.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Convolution.mm; sourceTree = "<group>"; };
+		6E2B6E5D16379C4000E611D1 /* Convolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Convolution.h; sourceTree = "<group>"; };
+		6E533D011645E89C00B8B038 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		A9AD8C6F1641717900477ADA /* CircularBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircularBuffer.cpp; sourceTree = "<group>"; };
+		A9AD8C701641717900477ADA /* CircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularBuffer.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E2B6DD816370A0C00E611D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E533D021645E89C00B8B038 /* MessageUI.framework in Frameworks */,
+				6E2B6E5B16379BF600E611D1 /* Accelerate.framework in Frameworks */,
+				6E2B6E0B16372D6900E611D1 /* AudioToolbox.framework in Frameworks */,
+				6E2B6E0916372D3A00E611D1 /* CoreMotion.framework in Frameworks */,
+				6E2B6E0716372D1800E611D1 /* CoreAudio.framework in Frameworks */,
+				6E2B6DE016370A0C00E611D1 /* UIKit.framework in Frameworks */,
+				6E2B6DE216370A0C00E611D1 /* Foundation.framework in Frameworks */,
+				6E2B6DE416370A0C00E611D1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E2B6DD016370A0C00E611D1 = {
+			isa = PBXGroup;
+			children = (
+				6E2B6DE516370A0C00E611D1 /* MicConvolution01 */,
+				6E2B6DDE16370A0C00E611D1 /* Frameworks */,
+				6E2B6DDC16370A0C00E611D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E2B6DDC16370A0C00E611D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E2B6DDB16370A0C00E611D1 /* MicConvolution01.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E2B6DDE16370A0C00E611D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E533D011645E89C00B8B038 /* MessageUI.framework */,
+				6E2B6E5A16379BF600E611D1 /* Accelerate.framework */,
+				6E2B6E0A16372D6900E611D1 /* AudioToolbox.framework */,
+				6E2B6E0816372D3A00E611D1 /* CoreMotion.framework */,
+				6E2B6E0616372D1800E611D1 /* CoreAudio.framework */,
+				6E2B6DDF16370A0C00E611D1 /* UIKit.framework */,
+				6E2B6DE116370A0C00E611D1 /* Foundation.framework */,
+				6E2B6DE316370A0C00E611D1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E2B6DE516370A0C00E611D1 /* MicConvolution01 */ = {
+			isa = PBXGroup;
+			children = (
+				6E2B6DEE16370A0C00E611D1 /* YZZAppDelegate.h */,
+				6E2B6DEF16370A0C00E611D1 /* YZZAppDelegate.mm */,
+				6E2B6E531637948400E611D1 /* MainStoryboard.storyboard */,
+				6E2B6DFA16370A0C00E611D1 /* YZZViewController.h */,
+				6E2B6DFB16370A0C00E611D1 /* YZZViewController.mm */,
+				6E2B6E5C16379C4000E611D1 /* Convolution.mm */,
+				6E2B6E5D16379C4000E611D1 /* Convolution.h */,
+				A9AD8C6F1641717900477ADA /* CircularBuffer.cpp */,
+				A9AD8C701641717900477ADA /* CircularBuffer.h */,
+				6E2B6DE616370A0C00E611D1 /* Supporting Files */,
+			);
+			path = MicConvolution01;
+			sourceTree = "<group>";
+		};
+		6E2B6DE616370A0C00E611D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E2B6E231637676800E611D1 /* YZZDataQueuer.cpp */,
+				6E2B6E241637676800E611D1 /* YZZDataQueuer.h */,
+				6E2B6E1A16372E7400E611D1 /* my_helper.cpp */,
+				6E2B6E1C16372E8300E611D1 /* my_helper.h */,
+				6E2B6E0C16372E0200E611D1 /* CAHostTimeBase.cpp */,
+				6E2B6E0D16372E0200E611D1 /* CAHostTimeBase.h */,
+				6E2B6E0E16372E0200E611D1 /* CABitOperations.h */,
+				6E2B6E0F16372E0200E611D1 /* CAMath.h */,
+				6E2B6E1016372E0200E611D1 /* CADebugMacros.h */,
+				6E2B6E1116372E0200E611D1 /* CADebugMacros.cpp */,
+				6E2B6E1216372E0200E611D1 /* CAXException.h */,
+				6E2B6E1316372E0200E611D1 /* CAStreamBasicDescription.h */,
+				6E2B6E1416372E0200E611D1 /* CAStreamBasicDescription.cpp */,
+				6E2B6E1516372E0200E611D1 /* CAXException.cpp */,
+				6E2B6DE716370A0C00E611D1 /* MicConvolution01-Info.plist */,
+				6E2B6E55163794A200E611D1 /* InfoPlist.strings */,
+				6E2B6DEB16370A0C00E611D1 /* main.m */,
+				6E2B6DED16370A0C00E611D1 /* MicConvolution01-Prefix.pch */,
+				6E2B6DF116370A0C00E611D1 /* Default.png */,
+				6E2B6DF316370A0C00E611D1 /* Default@2x.png */,
+				6E2B6DF516370A0C00E611D1 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E2B6DDA16370A0C00E611D1 /* MicConvolution01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E2B6DFF16370A0C00E611D1 /* Build configuration list for PBXNativeTarget "MicConvolution01" */;
+			buildPhases = (
+				6E2B6DD716370A0C00E611D1 /* Sources */,
+				6E2B6DD816370A0C00E611D1 /* Frameworks */,
+				6E2B6DD916370A0C00E611D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MicConvolution01;
+			productName = MicConvolution01;
+			productReference = 6E2B6DDB16370A0C00E611D1 /* MicConvolution01.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E2B6DD216370A0C00E611D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YZZ;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Kai Zou";
+			};
+			buildConfigurationList = 6E2B6DD516370A0C00E611D1 /* Build configuration list for PBXProject "MicConvolution01" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6E2B6DD016370A0C00E611D1;
+			productRefGroup = 6E2B6DDC16370A0C00E611D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E2B6DDA16370A0C00E611D1 /* MicConvolution01 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E2B6DD916370A0C00E611D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E2B6DF216370A0C00E611D1 /* Default.png in Resources */,
+				6E2B6DF416370A0C00E611D1 /* Default@2x.png in Resources */,
+				6E2B6DF616370A0C00E611D1 /* Default-568h@2x.png in Resources */,
+				6E2B6E541637948400E611D1 /* MainStoryboard.storyboard in Resources */,
+				6E2B6E56163794A200E611D1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E2B6DD716370A0C00E611D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E2B6DEC16370A0C00E611D1 /* main.m in Sources */,
+				6E2B6DF016370A0C00E611D1 /* YZZAppDelegate.mm in Sources */,
+				6E2B6DFC16370A0C00E611D1 /* YZZViewController.mm in Sources */,
+				6E2B6E1616372E0200E611D1 /* CAHostTimeBase.cpp in Sources */,
+				6E2B6E1716372E0200E611D1 /* CADebugMacros.cpp in Sources */,
+				6E2B6E1816372E0200E611D1 /* CAStreamBasicDescription.cpp in Sources */,
+				6E2B6E1916372E0200E611D1 /* CAXException.cpp in Sources */,
+				6E2B6E1B16372E7400E611D1 /* my_helper.cpp in Sources */,
+				6E2B6E251637676800E611D1 /* YZZDataQueuer.cpp in Sources */,
+				6E2B6E5E16379C4000E611D1 /* Convolution.mm in Sources */,
+				A9AD8C711641717900477ADA /* CircularBuffer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6E2B6DFD16370A0C00E611D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6E2B6DFE16370A0C00E611D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E2B6E0016370A0C00E611D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MicConvolution01/MicConvolution01-Prefix.pch";
+				INFOPLIST_FILE = "MicConvolution01/MicConvolution01-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6E2B6E0116370A0C00E611D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MicConvolution01/MicConvolution01-Prefix.pch";
+				INFOPLIST_FILE = "MicConvolution01/MicConvolution01-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E2B6DD516370A0C00E611D1 /* Build configuration list for PBXProject "MicConvolution01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E2B6DFD16370A0C00E611D1 /* Debug */,
+				6E2B6DFE16370A0C00E611D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E2B6DFF16370A0C00E611D1 /* Build configuration list for PBXNativeTarget "MicConvolution01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E2B6E0016370A0C00E611D1 /* Debug */,
+				6E2B6E0116370A0C00E611D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E2B6DD216370A0C00E611D1 /* Project object */;
+}

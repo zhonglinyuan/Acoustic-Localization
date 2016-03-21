@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47BF6EB816544B01007AE84C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BF6EB716544B01007AE84C /* UIKit.framework */; };
+		47BF6EBA16544B01007AE84C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BF6EB916544B01007AE84C /* Foundation.framework */; };
+		47BF6EBC16544B01007AE84C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BF6EBB16544B01007AE84C /* CoreGraphics.framework */; };
+		47BF6EC216544B01007AE84C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47BF6EC016544B01007AE84C /* InfoPlist.strings */; };
+		47BF6EC416544B01007AE84C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BF6EC316544B01007AE84C /* main.m */; };
+		47BF6EC816544B01007AE84C /* SimpleTapAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BF6EC716544B01007AE84C /* SimpleTapAppDelegate.m */; };
+		47BF6ECA16544B01007AE84C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BF6EC916544B01007AE84C /* Default.png */; };
+		47BF6ECC16544B01007AE84C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BF6ECB16544B01007AE84C /* Default@2x.png */; };
+		47BF6ECE16544B01007AE84C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BF6ECD16544B01007AE84C /* Default-568h@2x.png */; };
+		47BF6ED116544B01007AE84C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47BF6ECF16544B01007AE84C /* MainStoryboard.storyboard */; };
+		47BF6ED416544B01007AE84C /* SimpleTapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47BF6ED316544B01007AE84C /* SimpleTapViewController.mm */; };
+		47BF6EDF16544BB1007AE84C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BF6EDE16544BB1007AE84C /* QuartzCore.framework */; };
+		47BF6EE116544BC1007AE84C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BF6EE016544BC1007AE84C /* CoreAudio.framework */; };
+		47BF6EE316544BC9007AE84C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BF6EE216544BC9007AE84C /* CoreMotion.framework */; };
+		47BF6EE516544BD9007AE84C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BF6EE416544BD9007AE84C /* Accelerate.framework */; };
+		47BF6EE716544BE8007AE84C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BF6EE616544BE8007AE84C /* AudioToolbox.framework */; };
+		47BF6EFA16544F9E007AE84C /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47BF6EE916544F9E007AE84C /* CADebugMacros.cpp */; };
+		47BF6EFB16544F9E007AE84C /* CADebugPrintf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47BF6EEB16544F9E007AE84C /* CADebugPrintf.cpp */; };
+		47BF6EFC16544F9E007AE84C /* CAHostTimeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47BF6EED16544F9E007AE84C /* CAHostTimeBase.cpp */; };
+		47BF6EFD16544F9E007AE84C /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47BF6EF016544F9E007AE84C /* CAStreamBasicDescription.cpp */; };
+		47BF6EFE16544F9E007AE84C /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47BF6EF216544F9E007AE84C /* CAXException.cpp */; };
+		47BF6F0116544F9E007AE84C /* my_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47BF6EF816544F9E007AE84C /* my_helper.cpp */; };
+		6E92977E16584995003CE53F /* FixedFifo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E92977C16584995003CE53F /* FixedFifo.cpp */; };
+		6E929781165849C4003CE53F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E929780165849C4003CE53F /* MessageUI.framework */; };
+		6EB0CA97166AAFDA00D79589 /* YZZSensorManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6EB0CA96166AAFDA00D79589 /* YZZSensorManager.mm */; };
+		6EB0CA9B166AB1E700D79589 /* YZZSignalProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6EB0CA9A166AB1E700D79589 /* YZZSignalProcessor.mm */; };
+		6EB286B9166BB57700FAF12A /* YZZLocationManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6EB286B8166BB57700FAF12A /* YZZLocationManager.mm */; };
+		6EB286BD166BCC9800FAF12A /* YZZLocation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6EB286BC166BCC9800FAF12A /* YZZLocation.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47BF6EB316544B01007AE84C /* SimpleTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47BF6EB716544B01007AE84C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		47BF6EB916544B01007AE84C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		47BF6EBB16544B01007AE84C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		47BF6EBF16544B01007AE84C /* SimpleTap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTap-Info.plist"; sourceTree = "<group>"; };
+		47BF6EC116544B01007AE84C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		47BF6EC316544B01007AE84C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47BF6EC516544B01007AE84C /* SimpleTap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleTap-Prefix.pch"; sourceTree = "<group>"; };
+		47BF6EC616544B01007AE84C /* SimpleTapAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTapAppDelegate.h; sourceTree = "<group>"; };
+		47BF6EC716544B01007AE84C /* SimpleTapAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTapAppDelegate.m; sourceTree = "<group>"; };
+		47BF6EC916544B01007AE84C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		47BF6ECB16544B01007AE84C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		47BF6ECD16544B01007AE84C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		47BF6ED016544B01007AE84C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		47BF6ED216544B01007AE84C /* SimpleTapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTapViewController.h; sourceTree = "<group>"; };
+		47BF6ED316544B01007AE84C /* SimpleTapViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SimpleTapViewController.mm; sourceTree = "<group>"; };
+		47BF6EDE16544BB1007AE84C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		47BF6EE016544BC1007AE84C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		47BF6EE216544BC9007AE84C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		47BF6EE416544BD9007AE84C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		47BF6EE616544BE8007AE84C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		47BF6EE816544F9E007AE84C /* CABitOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABitOperations.h; sourceTree = "<group>"; };
+		47BF6EE916544F9E007AE84C /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		47BF6EEA16544F9E007AE84C /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		47BF6EEB16544F9E007AE84C /* CADebugPrintf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugPrintf.cpp; sourceTree = "<group>"; };
+		47BF6EEC16544F9E007AE84C /* CADebugPrintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugPrintf.h; sourceTree = "<group>"; };
+		47BF6EED16544F9E007AE84C /* CAHostTimeBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAHostTimeBase.cpp; sourceTree = "<group>"; };
+		47BF6EEE16544F9E007AE84C /* CAHostTimeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAHostTimeBase.h; sourceTree = "<group>"; };
+		47BF6EEF16544F9E007AE84C /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		47BF6EF016544F9E007AE84C /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		47BF6EF116544F9E007AE84C /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		47BF6EF216544F9E007AE84C /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		47BF6EF316544F9E007AE84C /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		47BF6EF816544F9E007AE84C /* my_helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = my_helper.cpp; sourceTree = "<group>"; };
+		47BF6EF916544F9E007AE84C /* my_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_helper.h; sourceTree = "<group>"; };
+		6E92977C16584995003CE53F /* FixedFifo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FixedFifo.cpp; sourceTree = "<group>"; };
+		6E92977D16584995003CE53F /* FixedFifo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedFifo.h; sourceTree = "<group>"; };
+		6E929780165849C4003CE53F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		6EB0CA95166AAFDA00D79589 /* YZZSensorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZSensorManager.h; sourceTree = "<group>"; };
+		6EB0CA96166AAFDA00D79589 /* YZZSensorManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YZZSensorManager.mm; sourceTree = "<group>"; };
+		6EB0CA99166AB1E700D79589 /* YZZSignalProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZSignalProcessor.h; sourceTree = "<group>"; };
+		6EB0CA9A166AB1E700D79589 /* YZZSignalProcessor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YZZSignalProcessor.mm; sourceTree = "<group>"; };
+		6EB286B7166BB57700FAF12A /* YZZLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZLocationManager.h; sourceTree = "<group>"; };
+		6EB286B8166BB57700FAF12A /* YZZLocationManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YZZLocationManager.mm; sourceTree = "<group>"; };
+		6EB286BB166BCC9800FAF12A /* YZZLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZLocation.h; sourceTree = "<group>"; };
+		6EB286BC166BCC9800FAF12A /* YZZLocation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YZZLocation.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47BF6EB016544B01007AE84C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E929781165849C4003CE53F /* MessageUI.framework in Frameworks */,
+				47BF6EE716544BE8007AE84C /* AudioToolbox.framework in Frameworks */,
+				47BF6EE516544BD9007AE84C /* Accelerate.framework in Frameworks */,
+				47BF6EE316544BC9007AE84C /* CoreMotion.framework in Frameworks */,
+				47BF6EE116544BC1007AE84C /* CoreAudio.framework in Frameworks */,
+				47BF6EDF16544BB1007AE84C /* QuartzCore.framework in Frameworks */,
+				47BF6EB816544B01007AE84C /* UIKit.framework in Frameworks */,
+				47BF6EBA16544B01007AE84C /* Foundation.framework in Frameworks */,
+				47BF6EBC16544B01007AE84C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47BF6EA816544B01007AE84C = {
+			isa = PBXGroup;
+			children = (
+				47BF6EBD16544B01007AE84C /* SimpleTap */,
+				47BF6EB616544B01007AE84C /* Frameworks */,
+				47BF6EB416544B01007AE84C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47BF6EB416544B01007AE84C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47BF6EB316544B01007AE84C /* SimpleTap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47BF6EB616544B01007AE84C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E929780165849C4003CE53F /* MessageUI.framework */,
+				47BF6EE616544BE8007AE84C /* AudioToolbox.framework */,
+				47BF6EE416544BD9007AE84C /* Accelerate.framework */,
+				47BF6EE216544BC9007AE84C /* CoreMotion.framework */,
+				47BF6EE016544BC1007AE84C /* CoreAudio.framework */,
+				47BF6EDE16544BB1007AE84C /* QuartzCore.framework */,
+				47BF6EB716544B01007AE84C /* UIKit.framework */,
+				47BF6EB916544B01007AE84C /* Foundation.framework */,
+				47BF6EBB16544B01007AE84C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47BF6EBD16544B01007AE84C /* SimpleTap */ = {
+			isa = PBXGroup;
+			children = (
+				6EB286BB166BCC9800FAF12A /* YZZLocation.h */,
+				6EB286BC166BCC9800FAF12A /* YZZLocation.mm */,
+				6EB286B7166BB57700FAF12A /* YZZLocationManager.h */,
+				6EB286B8166BB57700FAF12A /* YZZLocationManager.mm */,
+				6EB0CA99166AB1E700D79589 /* YZZSignalProcessor.h */,
+				6EB0CA9A166AB1E700D79589 /* YZZSignalProcessor.mm */,
+				6EB0CA95166AAFDA00D79589 /* YZZSensorManager.h */,
+				6EB0CA96166AAFDA00D79589 /* YZZSensorManager.mm */,
+				47BF6EC616544B01007AE84C /* SimpleTapAppDelegate.h */,
+				47BF6EC716544B01007AE84C /* SimpleTapAppDelegate.m */,
+				47BF6ECF16544B01007AE84C /* MainStoryboard.storyboard */,
+				47BF6ED216544B01007AE84C /* SimpleTapViewController.h */,
+				47BF6ED316544B01007AE84C /* SimpleTapViewController.mm */,
+				47BF6EBE16544B01007AE84C /* Supporting Files */,
+			);
+			path = SimpleTap;
+			sourceTree = "<group>";
+		};
+		47BF6EBE16544B01007AE84C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E92977C16584995003CE53F /* FixedFifo.cpp */,
+				6E92977D16584995003CE53F /* FixedFifo.h */,
+				47BF6EF816544F9E007AE84C /* my_helper.cpp */,
+				47BF6EF916544F9E007AE84C /* my_helper.h */,
+				47BF6EE816544F9E007AE84C /* CABitOperations.h */,
+				47BF6EE916544F9E007AE84C /* CADebugMacros.cpp */,
+				47BF6EEA16544F9E007AE84C /* CADebugMacros.h */,
+				47BF6EEB16544F9E007AE84C /* CADebugPrintf.cpp */,
+				47BF6EEC16544F9E007AE84C /* CADebugPrintf.h */,
+				47BF6EED16544F9E007AE84C /* CAHostTimeBase.cpp */,
+				47BF6EEE16544F9E007AE84C /* CAHostTimeBase.h */,
+				47BF6EEF16544F9E007AE84C /* CAMath.h */,
+				47BF6EF016544F9E007AE84C /* CAStreamBasicDescription.cpp */,
+				47BF6EF116544F9E007AE84C /* CAStreamBasicDescription.h */,
+				47BF6EF216544F9E007AE84C /* CAXException.cpp */,
+				47BF6EF316544F9E007AE84C /* CAXException.h */,
+				47BF6EBF16544B01007AE84C /* SimpleTap-Info.plist */,
+				47BF6EC016544B01007AE84C /* InfoPlist.strings */,
+				47BF6EC316544B01007AE84C /* main.m */,
+				47BF6EC516544B01007AE84C /* SimpleTap-Prefix.pch */,
+				47BF6EC916544B01007AE84C /* Default.png */,
+				47BF6ECB16544B01007AE84C /* Default@2x.png */,
+				47BF6ECD16544B01007AE84C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47BF6EB216544B01007AE84C /* SimpleTap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47BF6ED716544B01007AE84C /* Build configuration list for PBXNativeTarget "SimpleTap" */;
+			buildPhases = (
+				47BF6EAF16544B01007AE84C /* Sources */,
+				47BF6EB016544B01007AE84C /* Frameworks */,
+				47BF6EB116544B01007AE84C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleTap;
+			productName = SimpleTap;
+			productReference = 47BF6EB316544B01007AE84C /* SimpleTap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47BF6EAA16544B01007AE84C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SimpleTap;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "ZhongLin Yuan";
+			};
+			buildConfigurationList = 47BF6EAD16544B01007AE84C /* Build configuration list for PBXProject "SimpleTap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 47BF6EA816544B01007AE84C;
+			productRefGroup = 47BF6EB416544B01007AE84C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47BF6EB216544B01007AE84C /* SimpleTap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47BF6EB116544B01007AE84C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47BF6EC216544B01007AE84C /* InfoPlist.strings in Resources */,
+				47BF6ECA16544B01007AE84C /* Default.png in Resources */,
+				47BF6ECC16544B01007AE84C /* Default@2x.png in Resources */,
+				47BF6ECE16544B01007AE84C /* Default-568h@2x.png in Resources */,
+				47BF6ED116544B01007AE84C /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47BF6EAF16544B01007AE84C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47BF6EC416544B01007AE84C /* main.m in Sources */,
+				47BF6EC816544B01007AE84C /* SimpleTapAppDelegate.m in Sources */,
+				47BF6ED416544B01007AE84C /* SimpleTapViewController.mm in Sources */,
+				47BF6EFA16544F9E007AE84C /* CADebugMacros.cpp in Sources */,
+				47BF6EFB16544F9E007AE84C /* CADebugPrintf.cpp in Sources */,
+				47BF6EFC16544F9E007AE84C /* CAHostTimeBase.cpp in Sources */,
+				47BF6EFD16544F9E007AE84C /* CAStreamBasicDescription.cpp in Sources */,
+				47BF6EFE16544F9E007AE84C /* CAXException.cpp in Sources */,
+				47BF6F0116544F9E007AE84C /* my_helper.cpp in Sources */,
+				6E92977E16584995003CE53F /* FixedFifo.cpp in Sources */,
+				6EB0CA97166AAFDA00D79589 /* YZZSensorManager.mm in Sources */,
+				6EB0CA9B166AB1E700D79589 /* YZZSignalProcessor.mm in Sources */,
+				6EB286B9166BB57700FAF12A /* YZZLocationManager.mm in Sources */,
+				6EB286BD166BCC9800FAF12A /* YZZLocation.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		47BF6EC016544B01007AE84C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47BF6EC116544B01007AE84C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		47BF6ECF16544B01007AE84C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47BF6ED016544B01007AE84C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47BF6ED516544B01007AE84C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		47BF6ED616544B01007AE84C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47BF6ED816544B01007AE84C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleTap/SimpleTap-Prefix.pch";
+				INFOPLIST_FILE = "SimpleTap/SimpleTap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		47BF6ED916544B01007AE84C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleTap/SimpleTap-Prefix.pch";
+				INFOPLIST_FILE = "SimpleTap/SimpleTap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47BF6EAD16544B01007AE84C /* Build configuration list for PBXProject "SimpleTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BF6ED516544B01007AE84C /* Debug */,
+				47BF6ED616544B01007AE84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47BF6ED716544B01007AE84C /* Build configuration list for PBXNativeTarget "SimpleTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BF6ED816544B01007AE84C /* Debug */,
+				47BF6ED916544B01007AE84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47BF6EAA16544B01007AE84C /* Project object */;
+}

@@ -1,0 +1,253 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EE7594F16E1B9ED007829C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE7594E16E1B9ED007829C7 /* Foundation.framework */; };
+		6EE7595216E1B9ED007829C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE7595116E1B9ED007829C7 /* main.m */; };
+		6EE7595616E1B9ED007829C7 /* fft_objectiveC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6EE7595516E1B9ED007829C7 /* fft_objectiveC.1 */; };
+		6EE7595D16E1BA1A007829C7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE7595C16E1BA1A007829C7 /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6EE7594916E1B9ED007829C7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				6EE7595616E1B9ED007829C7 /* fft_objectiveC.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6EE7594B16E1B9ED007829C7 /* fft_objectiveC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fft_objectiveC; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE7594E16E1B9ED007829C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6EE7595116E1B9ED007829C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6EE7595416E1B9ED007829C7 /* fft_objectiveC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fft_objectiveC-Prefix.pch"; sourceTree = "<group>"; };
+		6EE7595516E1B9ED007829C7 /* fft_objectiveC.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = fft_objectiveC.1; sourceTree = "<group>"; };
+		6EE7595C16E1BA1A007829C7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EE7594816E1B9ED007829C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE7595D16E1BA1A007829C7 /* Accelerate.framework in Frameworks */,
+				6EE7594F16E1B9ED007829C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EE7594216E1B9ED007829C7 = {
+			isa = PBXGroup;
+			children = (
+				6EE7595C16E1BA1A007829C7 /* Accelerate.framework */,
+				6EE7595016E1B9ED007829C7 /* fft_objectiveC */,
+				6EE7594D16E1B9ED007829C7 /* Frameworks */,
+				6EE7594C16E1B9ED007829C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6EE7594C16E1B9ED007829C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EE7594B16E1B9ED007829C7 /* fft_objectiveC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EE7594D16E1B9ED007829C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EE7594E16E1B9ED007829C7 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EE7595016E1B9ED007829C7 /* fft_objectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				6EE7595116E1B9ED007829C7 /* main.m */,
+				6EE7595516E1B9ED007829C7 /* fft_objectiveC.1 */,
+				6EE7595316E1B9ED007829C7 /* Supporting Files */,
+			);
+			path = fft_objectiveC;
+			sourceTree = "<group>";
+		};
+		6EE7595316E1B9ED007829C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EE7595416E1B9ED007829C7 /* fft_objectiveC-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EE7594A16E1B9ED007829C7 /* fft_objectiveC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EE7595916E1B9ED007829C7 /* Build configuration list for PBXNativeTarget "fft_objectiveC" */;
+			buildPhases = (
+				6EE7594716E1B9ED007829C7 /* Sources */,
+				6EE7594816E1B9ED007829C7 /* Frameworks */,
+				6EE7594916E1B9ED007829C7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fft_objectiveC;
+			productName = fft_objectiveC;
+			productReference = 6EE7594B16E1B9ED007829C7 /* fft_objectiveC */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EE7594316E1B9ED007829C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = YZZ;
+			};
+			buildConfigurationList = 6EE7594616E1B9ED007829C7 /* Build configuration list for PBXProject "fft_objectiveC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6EE7594216E1B9ED007829C7;
+			productRefGroup = 6EE7594C16E1B9ED007829C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EE7594A16E1B9ED007829C7 /* fft_objectiveC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EE7594716E1B9ED007829C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE7595216E1B9ED007829C7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6EE7595716E1B9ED007829C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6EE7595816E1B9ED007829C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6EE7595A16E1B9ED007829C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fft_objectiveC/fft_objectiveC-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6EE7595B16E1B9ED007829C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fft_objectiveC/fft_objectiveC-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EE7594616E1B9ED007829C7 /* Build configuration list for PBXProject "fft_objectiveC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE7595716E1B9ED007829C7 /* Debug */,
+				6EE7595816E1B9ED007829C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EE7595916E1B9ED007829C7 /* Build configuration list for PBXNativeTarget "fft_objectiveC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE7595A16E1B9ED007829C7 /* Debug */,
+				6EE7595B16E1B9ED007829C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EE7594316E1B9ED007829C7 /* Project object */;
+}

@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E1BC6EE160D553700A8AF4D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1BC6ED160D553700A8AF4D /* CoreAudio.framework */; };
+		6E1BC6F0160D5CD900A8AF4D /* CAHostTimeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E1BC6EF160D5CD900A8AF4D /* CAHostTimeBase.cpp */; };
+		6ECBC68D1607D45200F7F189 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECBC68C1607D45200F7F189 /* UIKit.framework */; };
+		6ECBC68F1607D45200F7F189 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECBC68E1607D45200F7F189 /* Foundation.framework */; };
+		6ECBC6911607D45200F7F189 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECBC6901607D45200F7F189 /* CoreGraphics.framework */; };
+		6ECBC6971607D45200F7F189 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ECBC6951607D45200F7F189 /* InfoPlist.strings */; };
+		6ECBC6991607D45200F7F189 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECBC6981607D45200F7F189 /* main.m */; };
+		6ECBC69D1607D45200F7F189 /* YZZAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6ECBC69C1607D45200F7F189 /* YZZAppDelegate.mm */; };
+		6ECBC6A41607D46F00F7F189 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECBC6A31607D46F00F7F189 /* AudioToolbox.framework */; };
+		6ECBC6A61607D47B00F7F189 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECBC6A51607D47B00F7F189 /* CoreMotion.framework */; };
+		6ECBC6A81607D48400F7F189 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECBC6A71607D48400F7F189 /* MessageUI.framework */; };
+		6ECBC6AB1607D59500F7F189 /* my_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6ECBC6A91607D59500F7F189 /* my_helper.cpp */; };
+		6ECBC6B41607D72300F7F189 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6ECBC6AD1607D72300F7F189 /* CADebugMacros.cpp */; };
+		6ECBC6B51607D72300F7F189 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6ECBC6B01607D72300F7F189 /* CAStreamBasicDescription.cpp */; };
+		6ECBC6B61607D72300F7F189 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6ECBC6B21607D72300F7F189 /* CAXException.cpp */; };
+		6ECBC6BA1607D80300F7F189 /* YZZViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6ECBC6B81607D80300F7F189 /* YZZViewController.mm */; };
+		6ECBC6BB1607D80300F7F189 /* YZZViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECBC6B91607D80300F7F189 /* YZZViewController.xib */; };
+		6ECEF86D160FC3D500D805CF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ECEF86C160FC3D500D805CF /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E1BC6ED160D553700A8AF4D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		6E1BC6EF160D5CD900A8AF4D /* CAHostTimeBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAHostTimeBase.cpp; path = ../../../../../AppleDeveloper/CoreAudio/PublicUtility/CAHostTimeBase.cpp; sourceTree = "<group>"; };
+		6E1BC854160D5D0B00A8AF4D /* CAHostTimeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAHostTimeBase.h; path = ../../../../../AppleDeveloper/CoreAudio/PublicUtility/CAHostTimeBase.h; sourceTree = "<group>"; };
+		6ECBC6881607D45200F7F189 /* AAGDataLogger01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AAGDataLogger01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ECBC68C1607D45200F7F189 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6ECBC68E1607D45200F7F189 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6ECBC6901607D45200F7F189 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6ECBC6941607D45200F7F189 /* AAGDataLogger01-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AAGDataLogger01-Info.plist"; sourceTree = "<group>"; };
+		6ECBC6961607D45200F7F189 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6ECBC6981607D45200F7F189 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6ECBC69A1607D45200F7F189 /* AAGDataLogger01-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AAGDataLogger01-Prefix.pch"; sourceTree = "<group>"; };
+		6ECBC69B1607D45200F7F189 /* YZZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZZAppDelegate.h; sourceTree = "<group>"; };
+		6ECBC69C1607D45200F7F189 /* YZZAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = YZZAppDelegate.mm; sourceTree = "<group>"; };
+		6ECBC6A31607D46F00F7F189 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6ECBC6A51607D47B00F7F189 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		6ECBC6A71607D48400F7F189 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		6ECBC6A91607D59500F7F189 /* my_helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = my_helper.cpp; sourceTree = "<group>"; };
+		6ECBC6AA1607D59500F7F189 /* my_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_helper.h; sourceTree = "<group>"; };
+		6ECBC6AC1607D6C000F7F189 /* CABitOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CABitOperations.h; path = ../../CoreAudio/PublicUtility/CABitOperations.h; sourceTree = "<group>"; };
+		6ECBC6AD1607D72300F7F189 /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CADebugMacros.cpp; path = ../../CoreAudio/PublicUtility/CADebugMacros.cpp; sourceTree = "<group>"; };
+		6ECBC6AE1607D72300F7F189 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CADebugMacros.h; path = ../../CoreAudio/PublicUtility/CADebugMacros.h; sourceTree = "<group>"; };
+		6ECBC6AF1607D72300F7F189 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAMath.h; path = ../../CoreAudio/PublicUtility/CAMath.h; sourceTree = "<group>"; };
+		6ECBC6B01607D72300F7F189 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAStreamBasicDescription.cpp; path = ../../CoreAudio/PublicUtility/CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		6ECBC6B11607D72300F7F189 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAStreamBasicDescription.h; path = ../../CoreAudio/PublicUtility/CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		6ECBC6B21607D72300F7F189 /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAXException.cpp; path = ../../CoreAudio/PublicUtility/CAXException.cpp; sourceTree = "<group>"; };
+		6ECBC6B31607D72300F7F189 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAXException.h; path = ../../CoreAudio/PublicUtility/CAXException.h; sourceTree = "<group>"; };
+		6ECBC6B71607D80300F7F189 /* YZZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZViewController.h; sourceTree = "<group>"; };
+		6ECBC6B81607D80300F7F189 /* YZZViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YZZViewController.mm; sourceTree = "<group>"; };
+		6ECBC6B91607D80300F7F189 /* YZZViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YZZViewController.xib; sourceTree = "<group>"; };
+		6ECEF86C160FC3D500D805CF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6ECBC6851607D45200F7F189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1BC6EE160D553700A8AF4D /* CoreAudio.framework in Frameworks */,
+				6ECBC6A81607D48400F7F189 /* MessageUI.framework in Frameworks */,
+				6ECBC6A61607D47B00F7F189 /* CoreMotion.framework in Frameworks */,
+				6ECBC6A41607D46F00F7F189 /* AudioToolbox.framework in Frameworks */,
+				6ECBC68D1607D45200F7F189 /* UIKit.framework in Frameworks */,
+				6ECBC68F1607D45200F7F189 /* Foundation.framework in Frameworks */,
+				6ECBC6911607D45200F7F189 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6ECBC67D1607D45200F7F189 = {
+			isa = PBXGroup;
+			children = (
+				6ECEF86C160FC3D500D805CF /* Default-568h@2x.png */,
+				6ECBC6921607D45200F7F189 /* AAGDataLogger01 */,
+				6ECBC68B1607D45200F7F189 /* Frameworks */,
+				6ECBC6891607D45200F7F189 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6ECBC6891607D45200F7F189 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6ECBC6881607D45200F7F189 /* AAGDataLogger01.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6ECBC68B1607D45200F7F189 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E1BC6ED160D553700A8AF4D /* CoreAudio.framework */,
+				6ECBC6A71607D48400F7F189 /* MessageUI.framework */,
+				6ECBC6A51607D47B00F7F189 /* CoreMotion.framework */,
+				6ECBC6A31607D46F00F7F189 /* AudioToolbox.framework */,
+				6ECBC68C1607D45200F7F189 /* UIKit.framework */,
+				6ECBC68E1607D45200F7F189 /* Foundation.framework */,
+				6ECBC6901607D45200F7F189 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6ECBC6921607D45200F7F189 /* AAGDataLogger01 */ = {
+			isa = PBXGroup;
+			children = (
+				6ECBC69B1607D45200F7F189 /* YZZAppDelegate.h */,
+				6ECBC69C1607D45200F7F189 /* YZZAppDelegate.mm */,
+				6ECBC6B71607D80300F7F189 /* YZZViewController.h */,
+				6ECBC6B81607D80300F7F189 /* YZZViewController.mm */,
+				6ECBC6B91607D80300F7F189 /* YZZViewController.xib */,
+				6ECBC6931607D45200F7F189 /* Supporting Files */,
+			);
+			path = AAGDataLogger01;
+			sourceTree = "<group>";
+		};
+		6ECBC6931607D45200F7F189 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E1BC854160D5D0B00A8AF4D /* CAHostTimeBase.h */,
+				6E1BC6EF160D5CD900A8AF4D /* CAHostTimeBase.cpp */,
+				6ECBC6AD1607D72300F7F189 /* CADebugMacros.cpp */,
+				6ECBC6AE1607D72300F7F189 /* CADebugMacros.h */,
+				6ECBC6AF1607D72300F7F189 /* CAMath.h */,
+				6ECBC6B01607D72300F7F189 /* CAStreamBasicDescription.cpp */,
+				6ECBC6B11607D72300F7F189 /* CAStreamBasicDescription.h */,
+				6ECBC6B21607D72300F7F189 /* CAXException.cpp */,
+				6ECBC6B31607D72300F7F189 /* CAXException.h */,
+				6ECBC6AC1607D6C000F7F189 /* CABitOperations.h */,
+				6ECBC6A91607D59500F7F189 /* my_helper.cpp */,
+				6ECBC6AA1607D59500F7F189 /* my_helper.h */,
+				6ECBC6941607D45200F7F189 /* AAGDataLogger01-Info.plist */,
+				6ECBC6951607D45200F7F189 /* InfoPlist.strings */,
+				6ECBC6981607D45200F7F189 /* main.m */,
+				6ECBC69A1607D45200F7F189 /* AAGDataLogger01-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6ECBC6871607D45200F7F189 /* AAGDataLogger01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ECBC6A01607D45200F7F189 /* Build configuration list for PBXNativeTarget "AAGDataLogger01" */;
+			buildPhases = (
+				6ECBC6841607D45200F7F189 /* Sources */,
+				6ECBC6851607D45200F7F189 /* Frameworks */,
+				6ECBC6861607D45200F7F189 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AAGDataLogger01;
+			productName = AAGDataLogger01;
+			productReference = 6ECBC6881607D45200F7F189 /* AAGDataLogger01.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6ECBC67F1607D45200F7F189 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YZZ;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Kai Zou";
+			};
+			buildConfigurationList = 6ECBC6821607D45200F7F189 /* Build configuration list for PBXProject "AAGDataLogger01" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6ECBC67D1607D45200F7F189;
+			productRefGroup = 6ECBC6891607D45200F7F189 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6ECBC6871607D45200F7F189 /* AAGDataLogger01 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6ECBC6861607D45200F7F189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ECBC6971607D45200F7F189 /* InfoPlist.strings in Resources */,
+				6ECBC6BB1607D80300F7F189 /* YZZViewController.xib in Resources */,
+				6ECEF86D160FC3D500D805CF /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6ECBC6841607D45200F7F189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ECBC6991607D45200F7F189 /* main.m in Sources */,
+				6ECBC69D1607D45200F7F189 /* YZZAppDelegate.mm in Sources */,
+				6ECBC6AB1607D59500F7F189 /* my_helper.cpp in Sources */,
+				6ECBC6B41607D72300F7F189 /* CADebugMacros.cpp in Sources */,
+				6ECBC6B51607D72300F7F189 /* CAStreamBasicDescription.cpp in Sources */,
+				6ECBC6B61607D72300F7F189 /* CAXException.cpp in Sources */,
+				6ECBC6BA1607D80300F7F189 /* YZZViewController.mm in Sources */,
+				6E1BC6F0160D5CD900A8AF4D /* CAHostTimeBase.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6ECBC6951607D45200F7F189 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ECBC6961607D45200F7F189 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6ECBC69E1607D45200F7F189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6ECBC69F1607D45200F7F189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6ECBC6A11607D45200F7F189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AAGDataLogger01/AAGDataLogger01-Prefix.pch";
+				INFOPLIST_FILE = "AAGDataLogger01/AAGDataLogger01-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6ECBC6A21607D45200F7F189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AAGDataLogger01/AAGDataLogger01-Prefix.pch";
+				INFOPLIST_FILE = "AAGDataLogger01/AAGDataLogger01-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6ECBC6821607D45200F7F189 /* Build configuration list for PBXProject "AAGDataLogger01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ECBC69E1607D45200F7F189 /* Debug */,
+				6ECBC69F1607D45200F7F189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ECBC6A01607D45200F7F189 /* Build configuration list for PBXNativeTarget "AAGDataLogger01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ECBC6A11607D45200F7F189 /* Debug */,
+				6ECBC6A21607D45200F7F189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6ECBC67F1607D45200F7F189 /* Project object */;
+}

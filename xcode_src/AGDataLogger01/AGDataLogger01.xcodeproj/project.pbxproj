@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EA22529160643C900367714 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA22528160643C900367714 /* UIKit.framework */; };
+		6EA2252B160643C900367714 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA2252A160643C900367714 /* Foundation.framework */; };
+		6EA2252D160643C900367714 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA2252C160643C900367714 /* CoreGraphics.framework */; };
+		6EA22533160643C900367714 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EA22531160643C900367714 /* InfoPlist.strings */; };
+		6EA22535160643C900367714 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA22534160643C900367714 /* main.m */; };
+		6EA22539160643C900367714 /* KKZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA22538160643C900367714 /* KKZAppDelegate.m */; };
+		6EA2253C160643C900367714 /* KKZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA2253B160643C900367714 /* KKZViewController.m */; };
+		6EA2253F160643C900367714 /* KKZViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EA2253D160643C900367714 /* KKZViewController.xib */; };
+		6EA22546160645AA00367714 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA22545160645AA00367714 /* MessageUI.framework */; };
+		6EA22548160645B300367714 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA22547160645B300367714 /* CoreMotion.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6EA22524160643C900367714 /* AGDataLogger01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AGDataLogger01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA22528160643C900367714 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6EA2252A160643C900367714 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6EA2252C160643C900367714 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6EA22530160643C900367714 /* AGDataLogger01-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AGDataLogger01-Info.plist"; sourceTree = "<group>"; };
+		6EA22532160643C900367714 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6EA22534160643C900367714 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6EA22536160643C900367714 /* AGDataLogger01-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AGDataLogger01-Prefix.pch"; sourceTree = "<group>"; };
+		6EA22537160643C900367714 /* KKZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKZAppDelegate.h; sourceTree = "<group>"; };
+		6EA22538160643C900367714 /* KKZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKZAppDelegate.m; sourceTree = "<group>"; };
+		6EA2253A160643C900367714 /* KKZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKZViewController.h; sourceTree = "<group>"; };
+		6EA2253B160643C900367714 /* KKZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKZViewController.m; sourceTree = "<group>"; };
+		6EA2253E160643C900367714 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KKZViewController.xib; sourceTree = "<group>"; };
+		6EA22545160645AA00367714 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		6EA22547160645B300367714 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EA22521160643C900367714 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA22548160645B300367714 /* CoreMotion.framework in Frameworks */,
+				6EA22546160645AA00367714 /* MessageUI.framework in Frameworks */,
+				6EA22529160643C900367714 /* UIKit.framework in Frameworks */,
+				6EA2252B160643C900367714 /* Foundation.framework in Frameworks */,
+				6EA2252D160643C900367714 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EA22519160643C900367714 = {
+			isa = PBXGroup;
+			children = (
+				6EA2252E160643C900367714 /* AGDataLogger01 */,
+				6EA22527160643C900367714 /* Frameworks */,
+				6EA22525160643C900367714 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6EA22525160643C900367714 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EA22524160643C900367714 /* AGDataLogger01.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EA22527160643C900367714 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EA22545160645AA00367714 /* MessageUI.framework */,
+				6EA22547160645B300367714 /* CoreMotion.framework */,
+				6EA22528160643C900367714 /* UIKit.framework */,
+				6EA2252A160643C900367714 /* Foundation.framework */,
+				6EA2252C160643C900367714 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EA2252E160643C900367714 /* AGDataLogger01 */ = {
+			isa = PBXGroup;
+			children = (
+				6EA22537160643C900367714 /* KKZAppDelegate.h */,
+				6EA22538160643C900367714 /* KKZAppDelegate.m */,
+				6EA2253A160643C900367714 /* KKZViewController.h */,
+				6EA2253B160643C900367714 /* KKZViewController.m */,
+				6EA2253D160643C900367714 /* KKZViewController.xib */,
+				6EA2252F160643C900367714 /* Supporting Files */,
+			);
+			path = AGDataLogger01;
+			sourceTree = "<group>";
+		};
+		6EA2252F160643C900367714 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EA22530160643C900367714 /* AGDataLogger01-Info.plist */,
+				6EA22531160643C900367714 /* InfoPlist.strings */,
+				6EA22534160643C900367714 /* main.m */,
+				6EA22536160643C900367714 /* AGDataLogger01-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EA22523160643C900367714 /* AGDataLogger01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EA22542160643C900367714 /* Build configuration list for PBXNativeTarget "AGDataLogger01" */;
+			buildPhases = (
+				6EA22520160643C900367714 /* Sources */,
+				6EA22521160643C900367714 /* Frameworks */,
+				6EA22522160643C900367714 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AGDataLogger01;
+			productName = AGDataLogger01;
+			productReference = 6EA22524160643C900367714 /* AGDataLogger01.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EA2251B160643C900367714 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KKZ;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Kai Zou";
+			};
+			buildConfigurationList = 6EA2251E160643C900367714 /* Build configuration list for PBXProject "AGDataLogger01" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6EA22519160643C900367714;
+			productRefGroup = 6EA22525160643C900367714 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EA22523160643C900367714 /* AGDataLogger01 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EA22522160643C900367714 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA22533160643C900367714 /* InfoPlist.strings in Resources */,
+				6EA2253F160643C900367714 /* KKZViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EA22520160643C900367714 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA22535160643C900367714 /* main.m in Sources */,
+				6EA22539160643C900367714 /* KKZAppDelegate.m in Sources */,
+				6EA2253C160643C900367714 /* KKZViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6EA22531160643C900367714 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EA22532160643C900367714 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6EA2253D160643C900367714 /* KKZViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EA2253E160643C900367714 /* en */,
+			);
+			name = KKZViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EA22540160643C900367714 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6EA22541160643C900367714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EA22543160643C900367714 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AGDataLogger01/AGDataLogger01-Prefix.pch";
+				INFOPLIST_FILE = "AGDataLogger01/AGDataLogger01-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6EA22544160643C900367714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AGDataLogger01/AGDataLogger01-Prefix.pch";
+				INFOPLIST_FILE = "AGDataLogger01/AGDataLogger01-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EA2251E160643C900367714 /* Build configuration list for PBXProject "AGDataLogger01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA22540160643C900367714 /* Debug */,
+				6EA22541160643C900367714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EA22542160643C900367714 /* Build configuration list for PBXNativeTarget "AGDataLogger01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA22543160643C900367714 /* Debug */,
+				6EA22544160643C900367714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EA2251B160643C900367714 /* Project object */;
+}
